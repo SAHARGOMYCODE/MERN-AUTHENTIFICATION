@@ -2,6 +2,8 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { logout } from "../../JS/actions/user";
 import { useHistory } from "react-router-dom";
+import Button from "@material-ui/core/Button";
+
 
 const Dashbord = () => {
   const dispatch = useDispatch();
@@ -9,14 +11,17 @@ const Dashbord = () => {
 
   return (
     <div>
-      <button
+      < <Button
+        variant="contained"
+        color="primary"
+        color="primary"
         onClick={() => {
           dispatch(logout());
           history.push("/");
         }}
       >
         Logout
-      </button>
+      </Button>
       Dashbord
     </div>
   );
