@@ -1,0 +1,36 @@
+{
+  "name": "authentification",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "front": "cd client && npm start",
+    "back": "nodemon server.js",
+    "dev": "concurrently \"npm run front\" \"npm run back\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "axios": "^0.21.0",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.7",
+    "nodemon": "^2.0.6",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "react-file-base64": "^1.0.3",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "proxy": "http://localhost:5000"
+}
